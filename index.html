@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf8">
+    <title>XHR Logger</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type="text/css" href="./styles/index.css">
+  </head>
+
+  <body class="p-2">
+
+    <header class="flex mt-2 mb-2">
+
+      <section class="flex justify-between">
+
+        <input type="number" min="1" max="1000" id="maxLogSizeInput" class="rounded-sm pl-1 pr-1 mr-1 text-xs">
+
+        <button
+          class="btn btn-secondary log-size-btn mr-2"
+          data-actionType="setMaxLogSize"
+          id="setMaxLogSizeBtn"
+          >Apply
+        </button>
+
+      </section>
+
+      <aside class="flex">
+
+        <button
+          class="btn clear-log-btn mr-2"
+          data-actionType="clearLog"
+          id="clearLogBtn"
+        >Clear Log
+        </button>
+
+        <button
+          class="btn clear-log-btn mr-2"
+          data-actionType="exportToCsv"
+          id="exportToCsvBtn"
+        >Export to CSV
+        </button>
+
+        <button
+          class="btn start-log-btn"
+          data-actionType="startRequestLogging"
+          id="startRequestLoggingBtn"
+        ><i class="fa-solid fa-circle" style="color: black;"></i> Start Logging
+        </button>
+
+        <button
+          class="btn stop-log-btn hidden"
+          data-actionType="stopRequestLogging"
+          id="stopRequestLoggingBtn"
+        ><i class="fa-solid fa-circle" style="color: red;"></i> Stop Logging
+        </button>
+      </aside>
+    </header>
+
+    <section
+      id="mainContainer"
+      class="main-container"
+    >
+    </section>
+
+  </body>
+  <script type="text/javascript" src="./scripts/index.js"></script>
+</html>

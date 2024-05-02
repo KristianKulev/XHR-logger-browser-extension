@@ -1,0 +1,229 @@
+/* Base styles */
+:root {
+  --primary-color: #fff8f5;
+  --secondary-color: #cbcbcb;
+  --tertiary-color: #6a6969;
+  --primary-border-color: #211f1e;
+  --secondary-border-color: #1b1f2326;
+  --tertiary-border-color: #e85339;
+  --primary-font-color: black;
+  --secondary-font-color: #ffffff;
+}
+
+body {
+
+  font-family: Roboto Mono,monospace;
+  background-color: var(--primary-color);
+}
+
+input {
+
+  border: 1px solid var(--secondary-border-color);
+  outline: none;
+}
+
+i {
+
+  pointer-events: none;
+}
+
+
+/* Generic styles */
+
+.truncate {
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pointer {
+
+  cursor: pointer;
+}
+
+.hidden {
+
+  display: none !important;
+}
+
+.rounded-sm {
+
+  border-radius: 4px;
+}
+
+.rounded-md {
+
+  border-radius: 8px;
+}
+
+
+.p-1 {
+
+  padding: 8px;
+}
+
+.p-2 {
+
+  padding: 16px;
+}
+
+.m-1 {
+
+  margin: 8px;
+}
+
+.m-2 {
+
+  margin: 16px;
+}
+
+.mt-1 {
+
+  margin-bottom: 8px;
+}
+
+.mt-2 {
+
+  margin-bottom: 16px;
+}
+
+.mb-1 {
+
+  margin-bottom: 8px;
+}
+
+.mb-2 {
+
+  margin-bottom: 16px;
+}
+
+.mr-1 {
+
+  margin-right: 8px;
+}
+
+.mr-2 {
+
+  margin-right: 14px;
+}
+
+.text-xs {
+
+  font-size: 10px;
+}
+
+.text-md {
+
+  font-size: 16px;
+}
+
+.block {
+
+  display: block;
+}
+
+.inline {
+
+  display: inline;
+}
+
+.flex {
+
+  display: flex;
+}
+
+.flex-auto {
+
+  flex: 1 1 auto;
+}
+
+.flex-column {
+
+  flex-direction: column;
+}
+
+.justify-center {
+
+  justify-content: space-between;
+}
+
+.justify-between {
+
+  justify-content: space-between;
+}
+
+.items-center {
+
+  align-items: center;
+}
+
+
+/* Custom styles */
+
+.btn {
+
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  padding: 2px 8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  vertical-align: middle;
+  border: 1px solid var(--secondary-border-color);
+  border-radius: 6px;
+  color: #24292e;
+  background-color: #fafbfc;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+  transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  transition-property: color, background-color, border-color;
+
+}
+
+.btn:hover {
+
+  background-color: #f3f4f6;
+  border-color: #1b1f2326;
+  transition-duration: 0.1s;
+}
+
+.btn-secondary {
+
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  padding: 2px 8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  vertical-align: middle;
+  border: 1px solid var(--secondary-border-color);
+  border-radius: 6px;
+  color: var(--tertiary-border-color);
+  background-color: #fafbfc;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+  transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  transition-property: color, background-color, border-color;
+}
+
+.btn-secondary:hover {
+  border-color: #1b1f2326;
+  box-shadow: rgba(27, 31, 35, 0.1) 0px 1px 0px 0px, rgba(255, 255, 255, 0.03) 0px 1px 0px 0px inset;
+  transition-duration: 0.1s;
+}
+
+.logs-table-header .log-item {
+
+  width: 20%;
+}
+
+.logs-table-body .log-item {
+
+  width: 100%;
+}
+
+.log-item div {
+
+  width: calc(20%);  /* For text-overflow: ellipsys to work */
+}
