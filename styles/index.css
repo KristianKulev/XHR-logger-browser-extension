@@ -12,6 +12,7 @@
 
 body {
 
+  min-width: 500px;
   font-family: Roboto Mono,monospace;
   background-color: var(--primary-color);
 }
